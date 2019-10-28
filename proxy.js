@@ -25,6 +25,8 @@ var version = require('./package.json').version;
  */
 
 module.exports = setup;
+module.exports.onrequest = onrequest;
+module.exports.onconnect = onconnect;
 
 /**
  * Sets up an `http.Server` or `https.Server` instance with the necessary
